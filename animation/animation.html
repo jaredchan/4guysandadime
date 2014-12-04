@@ -1,0 +1,62 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animation</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600
+      });
+		});
+		
+</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+        <section class="page1">
+            <div class="page_container">
+                <div class="ball"><img src="images/ball.svg"></div>
+            </div>
+          </div>
+        </section>
+        <section class="page2">
+            <div class="page_container">
+                <div class="court"><img src="images/court.svg"></div>
+            </div>
+        </section>
+        <section class="page3">
+            <div class="page_container">
+                <div class="arena"><img src="images/arena.svg"></div>
+            </div>
+        </section>
+        <section class="page4">
+            <div class="page_container">
+                <div class="player_1"><img src="images/player_1.svg"></div>
+            </div>
+        </section>
+        <section class="page5">
+            <div class="page_container">
+                <div class="player_2"><img src="images/player_2.svg"></div>
+            </div>
+        </section>
+        <section class="page6">
+            <div class="page_container">
+                <div class="player_3"><img src="images/player_3.svg"></div>
+            </div>
+        </section>
+        <section class="page7">
+            <div class="page_container">
+                <div class="win"><img src="images/win.svg"></div>
+            </div>
+        </section>
+	   </div>
+    </div>
+</body>
+</html>

@@ -72,7 +72,7 @@ body {
   height: 100%;
 }
 
-.ball img{
+.ball > img{
   position: absolute;
   z-index: 999;
   width: 100px;
@@ -86,6 +86,8 @@ body {
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
+
+/* WebKit and Opera browsers */
 
 @-webkit-keyframes bounce {
   from, to  {
@@ -103,6 +105,8 @@ body {
   to   { -webkit-transform: rotateZ(360deg); }
 }
 
+
+/* all other browsers */    
 @keyframes bounce {
   from, to  {
     bottom: 0;
@@ -129,32 +133,249 @@ body {
   }
 }
 
-.ball img:hover {
+.ball > img:hover {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
     cursor: pointer;
   }
 
 .court{
-  width: 100%;
-  height: 100%;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+  position: relative;
 }
 
-.court img{
+.court > img{
   width: 80%;
-  height: 37.5%;
-      -webkit-animation-name: spinner;
+  position: absolute;
+  z-index: 1;
+  margin-top:30%;
+  left: 10%;
+    -webkit-animation-name: spin_3d, fall_down;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;
 
-    animation-name: spinner;
+    animation-name: spin_3d, fall_down;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-duration: 2s;
 
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spin_3d {
+  from {
+   -webkit-transform: rotateX(0deg);    
+ }
+  to {
+   -webkit-transform: rotateX(80deg); 
+ }
+}
+
+/* all other browsers */
+@keyframes spin_3d {
+  from {
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  to {
+    -moz-transform: rotateX(80deg);
+    -ms-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+  }
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes fall_down {
+  from{
+    margin-top: 10%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    margin-top: 30%;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes fall_down {
+  from{
+    margin-top: 10%;
+    animation-timing-function: ease-out;
+  }
+  to {
+    margin-top: 30%;
+  }
+}
+
+
+
+.player_1 > img{
+  width: 20%;
+  height: 40%;
+  margin-top: 50%;
+  margin-left: -40%;
+  -webkit-animation-name: rush;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+
+  animation-name: rush;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes rush {
+  from{
+    margin-left: -40%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    margin-left: 80%;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes rush {
+  from{
+    margin-left: -40%;
+    animation-timing-function: ease-out;
+  }
+  to {
+    margin-left: 80%;
+  }
+}
+
+.player_2 > img{
+  width: 36%;
+  height: 40%;
+  margin-top: 50%;
+  margin-right: -40%;
+  -webkit-animation-name: defense;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 4s;
+
+  animation-name: defense;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-delay: 4s;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes defense {
+  from{
+    margin-right: -40%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    margin-right: 80%;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes defense {
+  from{
+    margin-right: -40%;
+    animation-timing-function: ease-out;
+  }
+  to {
+    margin-right: 80%;
+  }
+}
+
+.player_3 > img{
+  width: 25%;
+  height: 40%;
+  margin-top: 43%;
+  margin-left: -40%;
+  -webkit-animation-name: kick;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 6s;
+
+  animation-name: kick;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-delay: 6s;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes kick {
+  from{
+    margin-left: -40%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    margin-left: 75%;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes kick {
+  from{
+    margin-left: -40%;
+    animation-timing-function: ease-out;
+  }
+  to {
+    margin-left: 75%;
+  }
+}
+
+.win > img{
+  width: 100%;
+  margin-top: 60%;
+  -webkit-animation-name: cheer;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 8s;
+
+  animation-name: cheer;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-delay: 8s;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes cheer {
+  from{
+    margin-top: 60%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    margin-top: 10%;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes cheer {
+  from{
+    margin-top: 60%;
+    animation-timing-function: ease-out;
+  }
+  to {
+    margin-top: 10%;
+  }
 }

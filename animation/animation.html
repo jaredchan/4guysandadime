@@ -7,22 +7,24 @@
 <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
-<script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600
-      });
-		});
-		
-</script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $(".main").onepage_scroll({
+                sectionContainer: "section",
+                responsiveFallback: 600
+            });
+        });
+        function moveDown(){
+            $(".main").moveDown();
+        };
+    </script>
 </head>
 <body>
   <div class="wrapper">
 	  <div class="main">
         <section class="page1">
             <div class="page_container">
-                <div class="ball"><img src="images/ball.svg"></div>
+                <div class="ball" onclick="javascript:moveDown()"><img src="images/ball.svg"></div>
             </div>
         </section>
         <section class="page2">

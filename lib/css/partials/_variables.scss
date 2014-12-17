@@ -23,16 +23,14 @@ $container-md-width:800px;
 $container-lg-width:1000px;
 $container-xl-width:1200px;
 
-$color-red: #e11;
-$color-warning: $color-red;
-$color-yellow: rgb(240,240,40);
-$color-alert: $color-yellow;
-$color-blue: #03c;
-$color-hero: $color-blue;
-$color-green: #00FF00;
-$color-confirm: $color-green;
 
-$color-grey-light:#eee;
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Graduate);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+// Font Variables
+$graduate: 'Graduate', serif;   
+$open-sans: 'Open Sans', sans-serif;
 
 
 @mixin make-font-face($font-name,$font-src,$font-format:'ttf') {

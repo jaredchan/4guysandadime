@@ -1,0 +1,573 @@
+.float{
+  position: absolute;
+  z-index: 10;
+}
+
+.fall_0{
+  opacity: 0;
+
+  -webkit-animation:forwards;
+  -webkit-animation-name: fall_text;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+
+  animation:forwards;
+  animation-name: fall_text;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.fall_1{
+  opacity: 0;
+
+  -webkit-animation:forwards;
+  -webkit-animation-name: fall_text;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+
+  animation:forwards;
+  animation-name: fall_text;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.fall_2{
+  opacity: 0;
+  -webkit-animation:forwards;
+  -webkit-animation-name: fall_text;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+
+  animation:forwards;
+  animation-name: fall_text;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.fall_3{
+  opacity: 0;
+
+  -webkit-animation:forwards;
+  -webkit-animation-name: fall_text;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+
+  
+  animation:forwards;
+  animation-name: fall_text;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.fall_4{
+  opacity: 0;
+
+  -webkit-animation:forwards;
+  -webkit-animation-name: fall_text;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+
+  
+  animation:forwards;
+  animation-name: fall_text;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fall_text {
+    from {margin-top: -30px;opacity: 0;}
+    to {margin-top: 0px;opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fall_text {
+    from {margin-top: -30px;opacity: 0;}
+    to {margin-top: 0px;opacity: 1;}
+}
+
+.fade_in_1{
+  opacity: 0;
+
+  -webkit-animation:forwards;
+  -webkit-animation-name: fade_in_text;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+
+  
+  animation:forwards;
+  animation-name: fade_in_text;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.fade_in_2{
+  opacity: 0;
+
+  -webkit-animation:forwards;
+  -webkit-animation-name: fade_in_text;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+
+  
+  animation:forwards;
+  animation-name: fade_in_text;
+  animation-delay: 2.5s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.fade_in_3{
+  opacity: 0;
+
+  -webkit-animation:forwards;
+  -webkit-animation-name: fade_in_text;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+
+  
+  animation:forwards;
+  animation-name: fade_in_text;
+  animation-delay: 3s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.fade_in_4{
+  opacity: 0;
+
+  -webkit-animation:forwards;
+  -webkit-animation-name: fade_in_text;
+  -webkit-animation-delay: 3.5s;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+
+  
+  animation:forwards;
+  animation-name: fade_in_text;
+  animation-delay: 3.5s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fade_in_text {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fade_in_text {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fly_in_ball{
+  bottom: -200px;
+  z-index: 1;
+  position: fixed;
+  margin-left: -50px;
+  left: 50%;
+  width: 100px;
+  -webkit-animation-name: fly_in, spin;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-iteration-count: linear;
+  -webkit-animation-duration: 2s;
+
+  animation-name: fly_in, spin;
+  -webkit-animation-delay: 5s;
+  animation-iteration-count: linear;
+  animation-duration: 2s;
+}
+
+/* WebKit and Opera browsers */
+
+@-webkit-keyframes fly_in {
+  from, to  {
+    bottom: -20%;
+    width: 600px;
+    margin-left: -300px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  40% {
+    bottom: 60%;
+    width: 250px
+    margin-left: -125px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0;
+    width: 100px;
+    margin-left: -50px;
+  }
+}
+
+/* all other browsers */  
+
+@keyframes fly_in {
+  from, to  {
+    bottom: -20%;
+    width: 600px;
+    margin-left: -300px;
+    animation-timing-function: ease-out;
+  }
+  40% {
+    bottom: 60%;
+    width: 250px
+    margin-left: -125px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    bottom: 0;
+    width: 100px;
+    margin-left: -50px;
+  }
+}
+
+.ball {
+  bottom: 0px;
+  z-index: 5;
+  position: fixed;
+  margin-left: -50px;
+  width: 100%;
+  height: 100%;
+}
+
+.ball  img{
+  position: absolute;
+  margin-top: -200px;
+  width: 100px;
+  -webkit-animation-name: bounce, spin;
+  -webkit-animation-delay: 7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.5s;
+
+  animation-name: bounce, spin;
+  -webkit-animation-delay: 7s;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+/* WebKit and Opera browsers */
+
+@-webkit-keyframes bounce {
+  from, to  {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 18%;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {                                     }
+  to   { -webkit-transform: rotateZ(360deg); }
+}
+
+
+/* all other browsers */    
+@keyframes bounce {
+  from, to  {
+    bottom: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 18%;
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes spin {
+  from {
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.ball  img:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+    width: 120px;
+    margin-left: -10px;
+  }
+
+.court{
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 1200px;
+  position: fixed;
+  bottom: -40%;
+  width: 100%;
+}
+
+.court  img{
+  width: 80%;
+  position: absolute;
+  z-index: 1;
+  left: 10%;
+
+  -webkit-animation-name: spin_3d, fall_down;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+
+  animation-name: spin_3d, fall_down;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-duration: 4s;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spin_3d {
+  from {
+   -webkit-transform: rotateX(0deg);    
+ }
+  to {
+   -webkit-transform: rotateX(60deg); 
+ }
+}
+
+/* all other browsers */
+@keyframes spin_3d {
+  from {
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  to {
+    -moz-transform: rotateX(60deg);
+    -ms-transform: rotateX(60deg);
+    transform: rotateX(60deg);
+  }
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes fall_down {
+  from{
+    bottom: 800px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes fall_down {
+  from{
+    margin-top: 800px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+
+
+.player_1  img{
+  position: fixed;
+  bottom: 0px;
+  left: -25%;
+  width: 20%;
+  -webkit-animation-name: rush;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+
+  animation-name: rush;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes rush {
+  from, to  {
+    left: -25%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  20% {
+    left: 50%;
+    -webkit--webkit-animation-timing-function: ease-out;
+  }
+  80% {
+    left: 70%;
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes rush {
+  from, to  {
+    left: -25%;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    left: 50%;
+    animation-timing-function: ease-out;
+  }
+  80% {
+    left: 70%;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+.player_2  img{
+  position: fixed;
+  bottom: 0px;
+  right: -40%;
+  width: 40%;
+  -webkit-animation-name: rush_2;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+
+  animation-name: rush;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes rush_2 {
+  from, to  {
+    right: -40%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  20% {
+    right: 50%;
+    -webkit--webkit-animation-timing-function: ease-out;
+  }
+  80% {
+    right: 70%;
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    right: 140%;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes rush_2 {
+  from, to  {
+    right: -40%;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    right: 50%;
+    animation-timing-function: ease-out;
+  }
+  80% {
+    right: 70%;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    right: 140%;
+  }
+}
+
+.player_3  img{
+  position: fixed;
+  bottom: 0px;
+  left: -25%;
+  width: 20%;
+  -webkit-animation-name: rush;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+
+  animation-name: rush;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+
+.cheer{
+  background-image: url(../../animation/images/cheer.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 600px;
+
+  -webkit-animation-name: rise_up;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+
+  animation-name: rise_up;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-delay: 1s;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes rise_up {
+  from{
+    background-position: 50% 400px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  to {
+    background-position: 50% 0;
+  }
+}
+
+
+/* all other browsers */    
+@keyframes rise_up {
+  from{
+    bottom: -500px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    bottom: 0px;
+  }
+}
